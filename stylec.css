@@ -1,0 +1,69 @@
+/* Стилизуем iframe */
+iframe {
+    opacity: 0.95; /* Легкая прозрачность всей формы */
+    background-color: rgba(51, 51, 51, 0.5); /* Полупрозрачный фон */
+    border-radius: 20px; /* Закругленные углы */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Тень */
+    padding: 40px; /* Внутренняя рамка */
+}
+
+/* Дополнительные стили для темного фона */
+body {
+    background-color: #111; /* Темный фон страницы */
+    color: #fff; /* Белый текст */
+    font-family: Arial, sans-serif; /* Чистый шрифт */
+}
+
+h1 {
+    color: #fff; /* Белый заголовок */
+    text-align: center; /* Центрирование заголовка */
+    margin-bottom: 30px; /* Отступ под заголовком */
+}
+
+.contentb {
+    text-align: center; /* Центрирование кнопки */
+    margin-top: 40px; /* Отступ над кнопкой */
+}
+
+.shake-button {
+    background-color: #ffc107; /* Желтая кнопка */
+    color: #111; /* Темный текст на кнопке */
+    border: none; /* Убираем границу */
+    padding: 12px 24px; /* Внутренние отступы */
+    border-radius: 8px; /* Скругленные углы кнопки */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Указатель мыши при наведении */
+    transition: all 0.3s ease; /* Плавные переходы */
+}
+
+.shake-button:hover {
+    background-color: #ff9800; /* Изменение цвета кнопки при наведении */
+    transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 2000;
+    background-image: url('МУсор/Фон.jpg'); /* Путь к изображению */
+    background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь фон */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение изображения */
+}
+footer {
+    position: fixed; /* Закрепляем футер внизу страницы */
+    bottom: 0; /* Расположен в самом низу */
+    width: 100%; /* Занимает всю ширину страницы */
+    height: 40px; /* Устанавливаем небольшую высоту */
+    background-color: #343a40; /* Темный фон */
+    color: #fff; /* Белый текст */
+    display: flex; /* Гарантирует правильное расположение элементов */
+    justify-content: flex-end; /* Выравниваем текст вправо */
+    align-items: center; /* Центрируем текст по вертикали */
+    padding: 0 20px; /* Небольшие отступы по бокам */
+    box-sizing: border-box; /* Включаем отступы в общую ширину */
+    z-index: 99; /* Убеждаемся, что футер находится поверх остальных элементов */
+}
+
+footer p {
+    margin: 0; /* Убираем лишние отступы */
+    font-size: 14px; /* Меньший шрифт для компактности */
+}

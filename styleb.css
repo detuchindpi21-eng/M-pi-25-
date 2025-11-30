@@ -1,0 +1,107 @@
+/* Основные стили для контейнера */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr; /* Три колонки: текст, стрелка, изображение */
+    gap: 20px; /* Промежуток между элементами */
+    align-items: center; /* Вертикальное выравнивание элементов */
+}
+
+/* Стилизация блока с текстом */
+.text-block {
+    background-color: rgba(255, 255, 255, 0.7); /* Темный фон */
+    padding: 20px;
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Тень для объема */
+    color: #000000; /* Белый текст */
+}
+
+/* Заголовок в тексте */
+.text-block h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #000000;
+}
+
+/* Абзацы в тексте */
+.text-block p {
+    line-height: 1.6; /* Удобочитаемость текста */
+    color: #000000;
+}
+
+/* Стилизация блока с изображением */
+.image-block figure {
+    margin: 0; /* Сбрасываем внешние отступы */
+    background-color: #333; /* Темный фон для рамки */
+    padding: 10px; /* Внутренние отступы для рамки */
+    border-radius: 10px; /* Скругление углов рамки */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Тень для объема */
+}
+
+/* Изображение */
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Устраняем пробелы вокруг изображения */
+    border-radius: 10px; /* Скругление углов изображения */
+}
+
+/* Подпись к изображению */
+.image-block figcaption {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff; /* Белый текст подписи */
+}
+
+/* Разделитель со стрелкой */
+.separator {
+    display: flex;
+    justify-content: center; /* Центруем стрелку горизонтально */
+    align-items: center; /* Центруем стрелку вертикально */
+}
+
+.separator img {
+    width: 30px; /* Размер стрелки */
+    filter: invert(1); /* Инвертируем цвета стрелки для контраста */
+}
+
+/* Адаптивность для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Один столбец */
+        grid-template-rows: auto 50px auto; /* Размещение блоков друг под другом */
+    }
+
+    .separator {
+        margin: 20px 0; /* Отступы сверху и снизу стрелки */
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 2000;
+    background-image: url('МУсор/Фон.jpg'); /* Путь к изображению */
+    background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь фон */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение изображения */
+}
+img:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+.minimalistic-button {
+    background-color: #ffffff; /* Темный фон кнопки */
+    color: #000000; /* Белый текст */
+    border: none; /* Убираем стандартные границы кнопки */
+    padding: 18px 36px; /* Увеличили внутренние отступы */
+    font-size: 18px; /* Увеличили размер шрифта */
+    cursor: pointer; /* Указываем, что кнопка кликабельна */
+    transition: all 0.3s ease; /* Анимация при наведении */
+    border-radius: 4px; /* Скругленные углы */
+}
+
+.minimalistic-button:hover {
+    background-color: #444; /* Меняем цвет фона при наведении */
+}
+
+.minimalistic-button:focus {
+    outline: none; /* Убираем контур при фокусировке */
+}

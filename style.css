@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 2000;
+    background-image: url('МУсор/Фон.jpg'); /* Путь к изображению */
+    background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь фон */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение изображения */
+}
+img:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+.content {
+    max-width: 1000px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Централизация контейнера */
+    padding: 20px; /* Внутренние отступы */
+    background-color: rgba(0, 0, 0, 0.85); /* Почти непрозрачный фон */
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.1); /* Тень для контейнера */
+    text-align: justify; /* Выровнять текст по ширине */
+}
+
+.contentb {
+    max-width: 1000px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Централизация контейнера */
+    padding: 20px; /* Внутренние отступы */
+    background-color: rgba(0, 0, 0, 0.85); /* Почти непрозрачный фон */
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.1); /* Тень для контейнера */
+    text-align: center; /* Выровнять текст по центру */
+}
+.shake-button {
+               padding: 15px 30px;
+               font-size: 16px;
+               background-color: #007bff;
+               color: white;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+               transition: transform 0.2s;
+           }
+
+           /* Анимация вздрагивания */
+           @keyframes shake {
+               0% { transform: translate(2px, 0); }
+               25% { transform: translate(-2px, 0); }
+               50% { transform: translate(2px, 0); }
+               75% { transform: translate(-2px, 0); }
+               100% { transform: translate(0, 0); }
+           }
+
+           /* Запуск анимации при наведении на кнопку */
+           .shake-button:hover {
+               animation: shake 0.9s;
+           }
+           .poppins-extrabold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+          }
+           a{
+            text-decoration: none;
+           }
+           img{
+            max-width: 100%;
+           }
+           
