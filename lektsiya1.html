@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ПИ-21</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styleb.css"> <!-- Подключаем файл стилей -->
+<link rel="apple-touch-icon" sizes="180x180" href="pictures/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="pictures/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </head>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Дом <span class="sr-only">(Главная страница)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLectures" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Лекции
+            </a>
+
+              <div class="dropdown-menu dropdown-menu-end bg-light text-dark" aria-labelledby="navbarDropdownLectures">
+                <a class="dropdown-item" href="lektsiya1.html">1. Введение в языки программирования. Парадигмы программирования.</a>
+                <a class="dropdown-item" href="lektsiya2.html">2. Основы языка Python. Основные конструкции.</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="lektsiya3.html">3. Объектно-ориентированное программирование на Python.</a>
+                <a class="dropdown-item" href="lektsiya4.html">4. Работа с файлами и базами данных (введение).</a>
+                <a class="dropdown-item" href="lektsiya5.html">5. Основы C++. Типы данных и операторы.</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="lektsiya6.html">6. Управляющие структуры и массивы.</a>
+                <a class="dropdown-item" href="lektsiya7.html">7. Функции и указатели.</a>
+                <a class="dropdown-item" href="lektsiya8.html">8. Объектно-ориентированное программирование (ООП). Подробный разбор.</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="lektsiya9.html">9. Введение в HTML. Базовые элементы.</a>
+                <a class="dropdown-item" href="lektsiya10.html">10. Форматирование текста и изображений.</a>
+                <a class="dropdown-item" href="lektsiya11.html">11. Ссылки, таблицы и формы.</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="lektsiya12.html">12. CSS и семантическая разметка.</a>
+                <a class="dropdown-item" href="lektsiya13.html">13. Основы JavaScript. Переменные, типы данных, операторы и функции.</a>
+                <a class="dropdown-item" href="lektsiya14.html">14. Управляющие структуры и массивы.</a>
+                <a class="dropdown-item" href="lektsiya15.html">15. Объекты и работа с DOM.</a>
+                <a class="dropdown-item" href="lektsiya16.html">16. Введение в асинхронное программирование и основы работы с JSON.</a>
+                <div class="dropdown-divider"></div>
+            </div>
+
+
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPractice" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Практика
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPractice">
+                <a class="dropdown-item" href="test1.html">1.Применение Python на практике.</a>
+                <a class="dropdown-item" href="test2.html">2.Применение ООП в Python.</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="test3.html">3.Учимся работать с файлами и базами на практике</a>
+                <a class="dropdown-item" href="test4.html">4.Применение типов данных и операторов на практике,базовые задания.</a>
+                <a class="dropdown-item" href="test5.html">5.Применение управляющих структур и массивов на практике,базовые задания.</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="test6.html">6.Применение функций и указателей на практике,базовые задания.</a>
+                <a class="dropdown-item" href="test7.html">7.ООП применение на практике,базовые задания.</a>
+                <a class="dropdown-item" href="test8.html">8.Применение HTML на практике ,базовые задания.</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="test9.html">9.Применение знаний по форматированию текста и изображений в HTML на практике,базовые задания.</a>
+                <a class="dropdown-item" href="test10.html">10.Применение знаний по ссылкам ,таблицам и формам на практике,базовые задания.</a>
+                <a class="dropdown-item" href="test11.html">11.Применение знаний по CSS и семантической разметке на практике ,базовые задания.</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="test12.html">12.Применение знаний про переменные,типы данных,операторы и функции на практике,базовые задания</a>
+                <a class="dropdown-item" href="test13.html">13.Применение знаний про управляющие структуры и массивы на практике,базовые задания</a>
+                <a class="dropdown-item" href="test14.html">14.Применение знаний про объекты и работа с DOM на практике,базовые задания.</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="test15.html">15.Применение знаний про асинхронное программирование на практике ,базовые задания</a>
+
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="biografia.html">Биография <span class="sr-only">(Информация о создателе)</span></a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+    <style>
+      body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #111; /* Темный фон */
+            background-size: cover; /* Задний фон покрывает всю область */
+                background-attachment: fixed; /* Фиксируем задний фон */
+        }
+    
+        main {
+            background-color: transparent; /* Прозрачная основа */
+            padding: 80px 0; /* Увеличенное расстояние сверху и снизу */
+        }
+    
+        .card {
+            background-color: #222; /* Темный фон для карточек */
+            color: #fff; /* Белый текст */
+            border-radius: 10px; /* Закругленные углы */
+            overflow: hidden; /* Чтобы скрыть лишние части изображений */
+            margin-bottom: 60px; /* Увеличенное расстояние между секциями */
+        }
+    
+        .card-img-top {
+            width: 100%; /* Картинки занимают всю ширину карточки */
+            
+            object-fit: cover; /* Изображения масштабируются, сохраняя пропорции */
+        }
+    
+        .card-title {
+            font-size: 1.2rem; /* Немного увеличенный шрифт */
+            margin-bottom: 0.5rem; /* Небольшой отступ снизу */
+        }
+    
+        .card-text {
+            font-size: 0.9rem; /* Мелкий текст */
+            margin-bottom: 1rem; /* Отступ перед кнопкой */
+        }
+    
+        .btn-warning {
+            background-color: #ffa500; /* Ярко-желтый цвет */
+            border-color: #ffa500; /* Без контура */
+            color: #222; /* Темный текст */
+        }
+    
+        .lead {
+            color: #aaa; /* Светло-серый текст */
+            font-size: 1.2rem; /* Увеличенный шрифт */
+        }
+    
+        footer {
+                position: fixed; /* Фиксируем футер */
+                bottom: 0; /* Располагаем футер внизу экрана */
+                left: 0; /* Прикрепляем футер к левому краю */
+                width: 100%; /* Футер занимает всю ширину экрана */
+                background-color: rgba(255, 255, 255, 0.1); /* Прозрачный фон */
+                color: #fff; /* Белый текст */
+                font-size: 0.8rem; /* Мелкий текст */
+                padding: 20px 0; /* Немного пространства сверху и снизу */
+                text-align: center; /* Выравниваем текст по центру */
+            }
+    
+    
+        footer p {
+            margin: 0; /* Убираем отступы */
+        }
+     </style>
+    
+
+<style>
+    /* Эффект при наведении */
+    img:hover {
+        transform: scale(1.05); /* Увеличение изображения при наведении */
+    }
+</style>
+<style>
+  .centered-text {
+      width: 80%; /* Ширина блока */
+      margin: 0 auto; /* Центрирование блока */
+      text-align: center; /* Центрирование текста внутри блока */
+  }
+</style>
+
+
+<body>
+  
+  <main class="container">
+      
+    <!-- Первый блок -->
+      <section class="text-block">
+        <h2> Лекция №1: Введение в языки программирования и парадигмы программирования</h2
+        >
+          <p>
+              Всем привет, вот и пора начать изучать наши 4 языка программирования, чтобы в будущем вы выбрали тот, который вам больше понравится. Для этого вам доступен ряд лекционных материалов. После изучения каждой лекции вы сможете проходить наши практические задания.
+          </p>
+      </section>
+      <div class="separator">
+          <img src="стрелка лекция 1.png" alt="Стрелка">
+      </div>
+      <aside class="image-block">
+          <figure>
+              <img src="Мейн лекция 1.webp" alt="">
+              <figcaption></figcaption>
+          </figure>
+      </aside>
+
+      <!-- Второй блок -->
+      <section class="text-block">
+          <h2>Что такое программирование?</h2>
+          <p>
+              Представьте себе, что вы учитесь играть на пианино. Вы нажимаете клавиши, и инструмент играет музыку. Но как заставить компьютер делать то, что вам нужно? Для этого существует программирование.
+          </p>
+          <p>
+              Программирование — это процесс написания инструкций для компьютера, чтобы он выполнял нужные вам действия. Эти инструкции называются кодом, и они написаны на специальных языках программирования.
+          </p>
+      </section>
+      <div class="separator">
+          <img src="стрелка лекция 1.png" alt="Стрелка">
+      </div>
+      <aside class="image-block">
+          <figure>
+              <img src="Создатель языков программиорвания.jpg" alt="">
+              <figcaption>
+                  Немецкий инженер, один из пионеров компьютеростроения. Наиболее известен как создатель первого действительно работающего электро-механического программируемого компьютера Z3 (1941) и первого языка программирования высокого уровня Планкалкюль (1948).
+              </figcaption>
+          </figure>
+      </aside>
+
+      <!-- Третий блок -->
+      <section class="text-block">
+          <h2>История развития языков программирования</h2>
+          <p>
+              Когда компьютеры только появились, они были огромными машинами размером с комнату. Программисты писали программы прямо в двоичном коде — последовательности нулей и единиц. Это было сложно и долго.
+          </p>
+          <p>
+              Позже появились первые языки программирования, такие как Fortran и COBOL. Они сделали программирование проще и доступнее. Например, Ada Lovelace считается первым программистом в истории. Она написала программу для аналитической машины Чарльза Бэббиджа ещё в XIX веке!
+          </p>
+      </section>
+      <div class="separator">
+          <img src="стрелка лекция 1.png" alt="Стрелка">
+      </div>
+      <aside class="image-block">
+          <figure>
+              <img src="лекция 1 история компьютеров.webp" alt="">
+              <figcaption>
+               Перед вами эпохи компьютерного строения .От машин размеров с комнату ,до компактных ноутбуков. 
+              </figcaption>
+          </figure>
+      </aside>
+
+
+    <!-- Четвертый блок -->
+    <section class="text-block">
+      <h2>Парадигмы программирования</h2>
+      <p>
+        Представьте, что вы хотите построить дом. Можно использовать разные подходы: сначала возвести каркас, потом стены, или наоборот. Так и в программировании есть разные способы решать задачи. Эти способы называются парадигмами.
+      </p>
+      <p>
+        1.Императивное программирование: пошаговые инструкции. Как рецепт пирога — сначала смешайте ингредиенты, потом выпекайте.
+      </p>
+      <p>
+        2.Объектно-ориентированное программирование: программа состоит из объектов, которые взаимодействуют друг с другом. Как конструктор LEGO — собираете объекты из блоков.
+      </p>
+      <p>
+        3.Функциональное программирование: фокус на функциях и их результатах. Как магия — заклинание выполняется, и результат появляется.
+      </p> 
+      <p>
+        Главное отличие декларативной парадигмы от императивной на практике — это отсутствие присваивания. Вы можете возразить, что в коде выше переменные есть, и чисто технически это правда. Присмотритесь к коду внимательнее и вы заметите, что переменная создана ровно один раз — больше она не меняется. По сути, она рассматривается как константа или логическое высказывание. В математике это звучало бы так: «Допустим, что A — это множество чисел». Что бы мы дальше ни делали, A остается всегда тем же, чем было во время определения.
+      </p>
+  </section>
+  <div class="separator">
+      <img src="стрелка лекция 1.png" alt="Стрелка">
+  </div>
+  <aside class="image-block">
+      <figure>
+          <img src="gfhflbuvs ghjufvbhjdfybz ktrwbz 1.png" alt="">
+          <figcaption>Одна и та же задача может быть решена по-разному: каждая парадигма подразумевает своё решение</figcaption>
+      </figure>
+  </aside>
+
+
+  <!-- Пятый блок -->
+  <section class="text-block">
+    <h2>Примеры языков программирования</h2>
+    <p>
+      Сейчас существует множество языков программирования. Каждый из них подходит для определенных задач.
+    </p>
+    <p>
+      1.Python: простой и мощный язык, который используют для анализа данных, машинного обучения и веб-разработки.
+    </p>
+    <p>
+      2.JavaScript: основной язык для разработки веб-приложений. Без него большинство сайтов выглядели бы совсем иначе.
+    </p>
+    <p>
+      3.C++: быстрый и эффективный язык, используемый для разработки игр, операционных систем и другого сложного ПО.
+    </p>
+</section>
+<div class="separator">
+    <img src="стрелка лекция 1.png" alt="Стрелка">
+</div>
+<aside class="image-block">
+    <figure>
+        <img src="языки програмирования лекция 1.jpeg" alt="">
+        <figcaption>
+           
+        </figcaption>
+    </figure>
+</aside>
+
+<!-- Шестой блок -->
+<section class="text-block">
+  <h2>Практическое применение языков программирования</h2>
+  <p>
+    Программа, которую вы написали, может управлять дроном, создавать игру или даже помогать врачам диагностировать болезни! Вот несколько примеров:
+  </p>
+  <p>
+    1.Роботы: программы управляют движениями и действиями роботов.
+  </p>
+  <p>
+    2.Социальные сети: алгоритмы рекомендуют посты и помогают находить друзей.
+  </p>
+  <p>
+    3.Финансовые системы: программы обрабатывают транзакции и защищают данные.
+  </p>
+</section>
+<div class="separator">
+  <img src="стрелка лекция 1.png" alt="Стрелка">
+</div>
+<aside class="image-block">
+  <figure>
+      <img src="Топ языков програмирования лекция 1.webp" alt="">
+      <figcaption>
+         
+      </figcaption>
+  </figure>
+</aside>
+
+<!-- Седьмой блок -->
+<section class="text-block">
+  <h2>Заключение и мотивация</h2>
+  <p>
+    Программирование — это не только работа, но и творчество. Вы можете создать что-то новое, полезное и интересное. Представьте, что ваше приложение поможет людям общаться, учиться или развлекаться. Будущее технологий зависит от вас!
+  </p>
+</section>
+<div class="separator">
+  <img src="стрелка лекция 1.png" alt="Стрелка">
+</div>
+<aside class="image-block">
+  <figure>
+      <img src="дети делают робота лекция 1.jpg" alt="">
+      <figcaption>
+         
+      </figcaption>
+  </figure>
+</aside>
+  </main>
+  <div class="contentb fw-light" style="color: white; text-align: center;"> <!-- Здесь добавляем text-align: center -->
+    <a href="test1.html">
+        <button class="minimalistic-button">Практическое задание 1</button>
+    </a>
+    <footer class="bg-primary text-white py-4 mt-4">
+      <div class="container text-right">
+          <p class="float-right">© 2025 Курс по информатике. Все права защищены.</p>
+      </div>
+  </footer>
+
+
+  
+
+</div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
